@@ -50,7 +50,7 @@ function App() {
               isOpen={isModalOpen}
               onClose={closeModal}
               title="Reusable Modal"
-              size="medium"
+              size="large"
               footer={
                 <div className="flex justify-end space-x-2">
                   <Button variant="danger" onClick={closeModal}>
@@ -63,8 +63,18 @@ function App() {
               }
             >
               <div className="space-y-5">
-                <Input placeholder="Ismingizni kiriting" type="text" />
-                <Input placeholder="Emailingizni kiriting" type="email" />
+                <Input
+                  className="w-full"
+                  variant="outlined"
+                  placeholder="Ismingizni kiriting"
+                  type="text"
+                />
+                <Input
+                  className="w-full"
+                  variant="outlined"
+                  placeholder="Emailingizni kiriting"
+                  type="email"
+                />
               </div>
             </Modal>
           </div>

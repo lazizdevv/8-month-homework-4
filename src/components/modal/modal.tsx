@@ -31,7 +31,7 @@ export const Modal: React.FC<ModalProps> = ({
   return ReactDOM.createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div
-        className={`bg-white rounded-lg shadow-lg overflow-hidden ${
+        className={`bg-white rounded-lg shadow-lg overflow-hidden w-full ${
           fullWidth ? "w-full" : sizeClasses[size]
         }`}
       >
@@ -46,6 +46,6 @@ export const Modal: React.FC<ModalProps> = ({
         {footer && <div className="p-4 border-t">{footer}</div>}
       </div>
     </div>,
-    document.getElementById("root") as HTMLElement // Portalni ildizga joylashtirish
+    document.getElementById("root") as HTMLElement
   );
 };
