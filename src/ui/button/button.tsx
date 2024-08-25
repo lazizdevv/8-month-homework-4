@@ -1,17 +1,16 @@
 interface ButtonProps {
   children: string;
-  // onClick:void,
   type?: "submit" | "button";
   variant?: string;
 }
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: string;
-  startIcon?: React.ReactNode; // Boshida ko'rsatiladigan ikonka
-  endIcon?: React.ReactNode; // Oxirida ko'rsatiladigan ikonka
-  fullWidth?: boolean; // Tugmani to'liq kenglikda qilish
-  loading?: boolean; // Yuklanish belgisi uchun
-  disabled?: boolean; // Tugmani o'chirish
+  startIcon?: React.ReactNode;
+  endIcon?: React.ReactNode;
+  fullWidth?: boolean;
+  loading?: boolean;
+  disabled?: boolean;
 }
 
 export const Button = ({
